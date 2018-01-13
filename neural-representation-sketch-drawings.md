@@ -1,4 +1,5 @@
 # A Neural Representation of Sketch Drawings.
+David Ha, Douglas Eck, Arxiv, April 2017.
 
 ## Introduction
 
