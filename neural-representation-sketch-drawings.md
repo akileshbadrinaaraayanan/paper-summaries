@@ -32,7 +32,7 @@
 
 * Decoder is an [autoregressive RNN](https://arxiv.org/pdf/1310.8499.pdf) that samples output sketches conditional on a given latent vector z. 
 
-* At each step i of the decoder RNN, we feed the previous point, S<sub>i−1</sub> and the latent vector z in as a concatenated input x<sub>i</sub> , where S<sub>0</sub> is defined as (0, 0, 1, 0, 0). The output at each time step are the parameters for a probability distribution of the next data point S<sub>i</sub>.
+* At each step i of the decoder RNN, the previous point, S<sub>i−1</sub> and the latent vector z is fed in as a concatenated input x<sub>i</sub> , where S<sub>0</sub> is defined as (0, 0, 1, 0, 0). The output at each time step are the parameters for a probability distribution of the next data point S<sub>i</sub>.
 
 * The authors model (∆x, ∆y) as a Gaussian mixture model (GMM) with M normal distributions and (q1, q2, q3) as a categorical distribution to model the ground truth data (p1, p2, p3), where (q1 + q2 + q3 = 1).
 
