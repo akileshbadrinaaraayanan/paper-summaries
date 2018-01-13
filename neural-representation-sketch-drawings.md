@@ -1,0 +1,5 @@
+# A Neural Representation of Sketch Drawings.
+
+## Introduction
+
+* This paper proposes recurrent neural network based generative model that is capable of producing sketches of common objects in vector format. 
