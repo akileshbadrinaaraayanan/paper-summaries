@@ -34,3 +34,35 @@
 
 * At each step i of the decoder RNN, we feed the previous point, S<sub>i−1</sub> and the latent vector z in as a concatenated input x<sub>i</sub> , where S<sub>0</sub> is defined as (0, 0, 1, 0, 0). The output at each time step are the parameters for a probability distribution of the next data point S<sub>i</sub>.
 
+* The authors model (∆x, ∆y) as a Gaussian mixture model (GMM) with M normal distributions and (q1, q2, q3) as a categorical distribution to model the ground truth data (p1, p2, p3), where (q1 + q2 + q3 = 1).
+
+* An additional temperature parameter τ is introduced during sampling process.
+
+* In unconditional generation, the decoder RNN is used as a standalone model without any latent variables. In this case, the initial hidden states and cell states of the decoder RNN are initialized to zero and different samples are generated based on temperature values.
+
+* Loss function has two components: Reconstruction Loss used for vector parameters (∆x, ∆y, q1, q2, q3) and KL divergence used for modifying the latent vector z.
+
+* Since there is no latent z in unconditional generation, the loss function consists of only the reconstruction loss and no KL divergence loss.
+
+* The encoder RNN unit used is standard LSTM whereas the decoder RNN unit used is [HyperLSTM](https://arxiv.org/abs/1609.09106) as they are better than standard LSTM in sequence generation tasks as illustrated in the HyperNetworks paper.
+
+* Ramer-Douglas-Peucker algorithm has been used for simplifying the sketches consisting of more than 200 points.
+
+## Strengths
+
+* sketch-rnn is able to generate possible ways to finish an existing, but unfinished sketch drawing.
+
+* It encodes existing sketches into a latent vector, and generate similar looking sketches conditioned on the latent space.
+
+* Interesting results by interpolating between the latent space of two different sketches.
+
+## Weaknesses
+
+* Unable to model sketches containing more than 200 points as well as with complicated classes of sketches such as mermaids or lobsters.
+
+* Ineffective at modelling large number of classes simultaneously often combining characteristics of multiple classes in a single sketch.
+
+* Most of the good results shown in paper are based on models trained on a particular single class only.
+
+
+
