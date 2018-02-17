@@ -1,6 +1,8 @@
 # paper-summaries
 Summaries of recent papers on Deep Learning.
 
-* A Neural Representation of Sketch Drawings. [Paper](https://arxiv.org/pdf/1704.03477.pdf) [Review](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/neural-representation-sketch-drawings.md)
+* A Neural Representation of Sketch Drawings. [Paper](https://arxiv.org/pdf/1704.03477.pdf) [Summary](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/neural-representation-sketch-drawings.md)
 
-* Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks. [Paper](https://arxiv.org/abs/1703.10593) [Review](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Cycle_GAN.pdf)
+* Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks. [Paper](https://arxiv.org/abs/1703.10593) [Summary](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Cycle_GAN.pdf)
+
+* Towards Multimodal Image-to-Image Translation. [Paper](https://arxiv.org/abs/1711.11586) [Review](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/bicycle-gan.md) [Slides](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Bicycle_GAN.pdf)
