@@ -37,3 +37,20 @@ and Q to generate image B<sup>^</sup>.
 * However, the generated image is passed through an encoder to get a latent representation z and L1 loss between this z and N(z) is minimized.
 
 * In addition, there is a discriminator loss on B<sup>^</sup>
+
+### Bicycle GAN
+
+* Combines both cVAE-GAN and cLR-GAN objectives. 
+
+## Evaluation
+
+* Realism and Diversity : diversity using average LPIPS distance [ref](https://arxiv.org/abs/1801.03924), and realism using a real vs. fake Amazon Mechanical Turk test.
+
+* Datasets: edges → photos,  Google maps → satellite,  labels → images, outdoor night → day images
+
+* pix2pix+noise baseline produces little diversity.
+
+* cAE-GAN method produces large artifacts during sampling.
+
+* Bicycle GAN method produces results which have higher realism while maintaining diversity.
+
