@@ -1,7 +1,7 @@
 # paper-summaries
 Summaries of recent papers on Deep Learning.
 
-* Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings. [Paper](https://arxiv.org/abs/1803.08495) [Slides] (https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Text2Shape.pdf)
+* Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings. [Paper](https://arxiv.org/abs/1803.08495) [Slides](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Text2Shape.pdf)
 
 * Everybody Dance Now. [Paper](https://arxiv.org/abs/1808.07371) [Summary](https://github.com/akileshbadrinaaraayanan/paper-summaries/blob/master/Everybody_Dance_Now.pdf)
 
